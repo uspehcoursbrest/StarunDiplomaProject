@@ -22,3 +22,781 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.topline button {
+    font-size: 12px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+
+}
+
+header .englishVersion {
+    display: inline-block;
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .russianVersion {
+    display: inline-block;
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header [class*="icon"] {
+    font-size: 20px;
+    color: #202b2f;
+    text-decoration: none;
+}
+
+header .time {
+    font-size: 33px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #3c9ef1;
+}
+
+header .date {
+    font-size: 13px;
+    line-height: 14px;
+    color: #202b2f;
+}
+
+header .year {
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #202b2f;
+}
+
+header .menu a {
+    font-size: 15px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+header .menu {
+    background-color: #202b2f;
+
+}
+
+.bannerStart {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.titMain {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.025em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: right;
+}
+
+.bannerStart h2 {
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: right;
+}
+
+.bannerStart p {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-align: right;
+}
+
+.bannerStart button {
+    font-size: 17px;
+    line-height: 83px;
+    letter-spacing: 0.050em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 25px 60px 25px 60px;
+    background: linear-gradient(to right, #009cfe, #1fe096);
+    border: none;
+}
+
+.exchange {
+    height: 340px;
+    width: 310px;
+    color: #ffffff;
+    border-radius: 25px;
+
+}
+.exchange .item span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #202b2f;
+}
+
+.exchange .item span:nth-child(3) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #202b2f;
+}
+
+.exchange .item span:nth-child(4) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #19cf8b;
+}
+
+.exchange span[class*="icon"] {
+    color: #2b383c;
+    font-size: 30px;
+}
+
+.advantages {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.advantagesIcon span:first-child {
+    font-size: 40px;
+    color: #202b2f;
+}
+
+.advantagesIcon span:last-child {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.advantages .text {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.advantages .text span {
+    font-weight: 700;
+}
+
+.about h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.location span:first-child{
+    font-size: 60px;
+    color: #009dfe;
+}
+.location span:last-child {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.aboutText p {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.aboutText button {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.050em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    width: 260px;
+    height: 60px;
+    border-radius: 40px;
+}
+
+.buttonBlue {
+    background: #03a3f4;
+    width: 260px;
+    height: 60px;
+}
+
+.buttonGreen {
+    background: #44d29d;
+    width: 260px;
+    height: 60px;
+}
+
+ .plans h2 {
+     font-size: 30px;
+     font-weight: 700;
+     line-height: 83px;
+     letter-spacing: 0.025em;
+     text-transform: uppercase;
+     color: #202b2f;
+     text-align: center;
+ }
+
+ .plans p {
+     font-size: 17px;
+     line-height: 30px;
+     letter-spacing: 0.025em;
+     color: #202b2f;
+     text-align: center;
+ }
+.card1 {
+    height: 505px;
+    width: 570px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card1 .leftcard {
+    height: 505px;
+    width: 270px;
+}
+.card1 .leftcard span:first-child {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.card1 .leftcard span:nth-child(2) {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.card1 .leftcard span:nth-child(3) {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.card1 .leftcard button {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    width: 205px;
+    height: 45px;
+    border-radius: 40px;
+    box-shadow: 0 0 21px rgba(0,0,0,0.5);
+}
+
+.card1 .rightcard {
+    height: 505px;
+    width: 300px;
+}
+
+.card1 .rightcard span:nth-child(odd) {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #202b2f;
+}
+
+.card1 .rightcard span:nth-child(even) {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #3c9ef1;
+}
+
+.dailyInterest span {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #3c9ef1;
+}
+
+.card2 {
+    height: 505px;
+    width: 570px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.card2 .leftCard {
+    height: 505px;
+    width: 270px;
+}
+.card2 .leftCard span:first-child {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.card2 .leftCard span:nth-child(2) {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.card2 .leftCard span:nth-child(3) {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.card2 .leftCard button {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    width: 205px;
+    height: 45px;
+    border-radius: 40px;
+    box-shadow: 0 0 21px rgba(0,0,0,0.5);
+}
+
+.card2 .rightCard {
+    height: 505px;
+    width: 300px;
+}
+
+.card2 .rightCard span:nth-child(odd) {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #202b2f;
+}
+
+.card2 .rightCard span:nth-child(even) {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #3c9ef1;
+}
+
+.totalProfit span {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #3c9ef1;
+}
+
+.plans {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calculator {
+    background: linear-gradient(to right, #019efc, #1ee097)
+}
+
+.amount label {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+}
+.amount input {
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.choosing label {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+}
+.choosing option {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.profit span:first-child {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.profit span:last-child {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #202b2f;
+}
+.calculatorButton {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.050em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    width: 205px;
+    height: 45px;
+    border-radius: 40px;
+    background: #202b2f;
+}
+
+.refferal {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.refferal h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #202b2f;
+    text-align: center;
+}
+
+.scheme .item1 span:first-child {
+    font-size: 121px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #03a3f4;
+}
+
+.scheme .item1 span:last-child {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    color: #03a3f4;
+}
+.scheme > span {
+    font-size: 177px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+.scheme .item2 span:first-child {
+    font-size: 121px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #44d29d;
+}
+
+.scheme .item2 span:last-child {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    color: #44d29d;
+}
+
+.scheme p {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+    text-align: center;
+}
+
+.scheme button {
+    font-size: 17px;
+    line-height: 83px;
+    letter-spacing: 0.050em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(to right, #009cfe, #1fe096);
+    border: none;
+    height: 60px;
+    width: 205px;
+}
+
+.statistics {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.totalStatistics span[class*="icon"] {
+    font-size: 40px;
+}
+
+.totalStatistics span:nth-child(2) {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.totalStatistics span:nth-child(3) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #202b2f;
+}
+
+.lastDeposit .partOne span:nth-child(1) {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.lastDeposit .partOne span:nth-child(2) {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.lastDeposit .partOne span:nth-child(3) {
+    color: #3c9ef1;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+}
+
+.lastDeposit .partTwo span {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 83px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.lastWithdrawals span:nth-child(1) {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.lastWithdrawals span:nth-child(2) {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.lastWithdrawals span:nth-child(3) {
+    color: #44d29d;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+}
+
+.lastWithdrawals .partTwo span {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 83px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.qualities {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.qualities h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+.qualities span[class*="icon"] {
+    font-size: 55px;
+}
+
+.qualities span:nth-child(2) {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.qualities p {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #d4dbde;
+}
+
+.news {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.news h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #202b2f;
+    text-align: center;
+}
+
+.news span {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #03a3f4;
+}
+
+.news h3 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.news p {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+.news button {
+    font-size: 15px;
+    line-height: 83px;
+    letter-spacing: 0.050em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(to right, #009cfe, #1fe096);
+    border: none;
+    width: 165px;
+    height: 45px;
+    border-radius: 25px;
+}
+
+.currencyLogo {
+    background-color: #c9d3db;
+}
+
+footer .leftBlock span[class*="icon"] {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+footer {
+    background-color: #202b2f;
+}
+footer .copyrightInformation {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.menuFooter ul {
+    list-style-type: disc;
+    color: #1fe096;
+}
+
+.menuFooter a {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.rightBlock span {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #1fe096;
+    text-transform: uppercase;
+}
+
+.rightBlock p {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.rightBlock a {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #06a9eb;
+}
