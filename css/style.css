@@ -23,6 +23,11 @@ ul {
     padding: 0 15px;
 }
 
+.gradient {
+    background: linear-gradient(to right, #009cfe, #1fe096);
+    border: none;
+    border-radius: 30px;
+}
 .topline button {
     font-size: 12px;
     line-height: 30px;
@@ -34,7 +39,6 @@ ul {
     width: 100px;
     height: 30px;
     border-radius: 25px;
-
 }
 
 header .englishVersion {
@@ -50,12 +54,14 @@ header .russianVersion {
     background-repeat: no-repeat;
     background-position: center;
 }
-header [class*="icon"] {
+header .topline span[class*="icon"] {
     font-size: 20px;
     color: #202b2f;
-    text-decoration: none;
 }
 
+header .topline a {
+    text-decoration: none;
+}
 header .time {
     font-size: 33px;
     line-height: 17px;
@@ -84,11 +90,22 @@ header .menu a {
     color: #ffffff;
     text-decoration: none;
 }
-header .menu {
-    background-color: #202b2f;
-
+header .menu a.active {
+    color: #1ee096;
 }
 
+header .menu {
+    background-color: #202b2f;
+ }
+
+header .menu li{
+    display: inline-block;
+    margin-right: 52px;
+}
+
+.menu ul {
+    text-align: center;
+}
 .bannerStart {
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,23 +140,28 @@ header .menu {
 
 .bannerStart button {
     font-size: 17px;
-    line-height: 83px;
+    line-height: 30px;
     letter-spacing: 0.050em;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-    padding: 25px 60px 25px 60px;
-    background: linear-gradient(to right, #009cfe, #1fe096);
-    border: none;
+    height: 60px;
+    width: 300px;
 }
 
 .exchange {
     height: 340px;
     width: 310px;
-    color: #ffffff;
+    background-color: #ffffff;
     border-radius: 25px;
-
 }
+
+.exchange .item span.coin {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
 .exchange .item span:nth-child(2) {
     font-size: 14px;
     font-weight: 500;
@@ -171,6 +193,7 @@ header .menu {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .advantagesIcon span:first-child {
     font-size: 40px;
     color: #202b2f;
@@ -196,6 +219,29 @@ header .menu {
     font-weight: 700;
 }
 
+.sertificate {
+    width: 40%;
+    float: left;
+}
+
+.aboutText {
+    width: 60%;
+    float: left;
+    padding: 0 0 0 100px;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0 0 0;
+}
 .about h2 {
     font-size: 30px;
     font-weight: 700;
@@ -265,41 +311,40 @@ header .menu {
      color: #202b2f;
      text-align: center;
  }
+
+.plans {
+    margin: 0 -15px;
+}
+
 .card1 {
-    height: 505px;
-    width: 570px;
+    width: 50%;
+    height: 510px;
+    float: left;
+    padding: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card1 .leftcard {
-    height: 505px;
-    width: 270px;
+    width: 45%;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    float: left;
+    padding: 15px;
 }
 .card1 .leftcard span:first-child {
     font-size: 30px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
+
 }
 .card1 .leftcard span:nth-child(2) {
     font-size: 90px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
-}
+ }
 .card1 .leftcard span:nth-child(3) {
     font-size: 17px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
 }
 
 .card1 .leftcard button {
@@ -318,8 +363,9 @@ header .menu {
 }
 
 .card1 .rightcard {
-    height: 505px;
-    width: 300px;
+    width: 55%;
+    float: left;
+    padding: 15px;
 }
 
 .card1 .rightcard span:nth-child(odd) {
@@ -344,41 +390,33 @@ header .menu {
 }
 
 .card2 {
-    height: 505px;
-    width: 570px;
+    width: 50%;
+    height: 510px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    float: left;
+    padding: 15px;
 }
 
 .card2 .leftCard {
-    height: 505px;
-    width: 270px;
-}
-.card2 .leftCard span:first-child {
-    font-size: 30px;
+    width: 45%;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
+    float: left;
+    padding: 15px;
+}
+.card2 .leftCard span.titPlan {
+    font-size: 30px;
 }
 .card2 .leftCard span:nth-child(2) {
     font-size: 90px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
 }
 .card2 .leftCard span:nth-child(3) {
     font-size: 17px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
 }
 
 .card2 .leftCard button {
@@ -397,8 +435,9 @@ header .menu {
 }
 
 .card2 .rightCard {
-    height: 505px;
-    width: 300px;
+    width: 55%;
+    float: left;
+    padding: 15px;
 }
 
 .card2 .rightCard span:nth-child(odd) {
@@ -412,7 +451,7 @@ header .menu {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
-    color: #3c9ef1;
+    color: #20e097;
 }
 
 .totalProfit span {
@@ -429,19 +468,52 @@ header .menu {
 }
 
 .calculator {
-    background: linear-gradient(to right, #019efc, #1ee097)
+    background: linear-gradient(to right, #019efc, #1ee097);
+    padding: 50px 0 60px 0;
 }
 
+.amount {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.choosing {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.profit {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.button {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+}
 .amount label {
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
     color: #ffffff;
 }
+
 .amount input {
     font-size: 15px;
-    line-height: 24px;
     color: #000000;
+    border: 1px solid white;
+    background-color: #59c9ef;
+    border-radius: 30px;
+    padding: 10px;
+    width: 265px;
 }
 
 .choosing label {
@@ -449,6 +521,14 @@ header .menu {
     font-weight: 700;
     line-height: 24px;
     color: #ffffff;
+}
+
+.choosing select {
+    border: 1px solid white;
+    background-color: #59c9ef;
+    border-radius: 30px;
+    padding: 10px;
+    width: 265px;
 }
 .choosing option {
     font-size: 15px;
@@ -501,20 +581,26 @@ header .menu {
     text-align: center;
 }
 
-.scheme .item1 span:first-child {
+.six {
     font-size: 121px;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #03a3f4;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: center;
 }
 
-.scheme .item1 span:last-child {
+.rc {
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.025em;
     color: #03a3f4;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: center;
 }
 .scheme > span {
     font-size: 177px;
@@ -524,25 +610,34 @@ header .menu {
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: center;
 }
 
-.scheme .item2 span:first-child {
+.one {
     font-size: 121px;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #44d29d;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: center;
 }
 
-.scheme .item2 span:last-child {
+.rec {
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.025em;
     color: #44d29d;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: center;
 }
 
-.scheme p {
+.text p {
     font-size: 17px;
     line-height: 30px;
     letter-spacing: 0.025em;
@@ -550,15 +645,14 @@ header .menu {
     text-align: center;
 }
 
-.scheme button {
+.refferal button {
     font-size: 17px;
     line-height: 83px;
     letter-spacing: 0.050em;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-    background: linear-gradient(to right, #009cfe, #1fe096);
-    border: none;
+    text-align: center;
     height: 60px;
     width: 205px;
 }
@@ -569,25 +663,23 @@ header .menu {
     background-position: center;
 }
 
+.totalStatistics {
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
 .totalStatistics span[class*="icon"] {
     font-size: 40px;
 }
 
 .totalStatistics span:nth-child(2) {
     font-size: 15px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     color: #ffffff;
 }
 
 .totalStatistics span:nth-child(3) {
     font-size: 30px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     color: #202b2f;
 }
 
@@ -657,6 +749,39 @@ header .menu {
     color: #ffffff;
 }
 
+.itemDays {
+    width: 20%;
+    float: left;
+}
+
+.itemVizitors{
+    width: 20%;
+    float: left;
+}
+
+.itemWithdrawls{
+    width: 20%;
+    float: left;
+}
+
+.itemDepozits {
+    width: 20%;
+    float: left;
+}
+.itemUsers {
+    width: 20%;
+    float: left;
+}
+
+.lastDeposit {
+    width: 50%;
+    float: left;
+}
+.lastWithdrawals {
+    width: 50%;
+    float: left;
+}
+
 .qualities {
     background-size: cover;
     background-repeat: no-repeat;
@@ -693,10 +818,30 @@ header .menu {
     color: #d4dbde;
 }
 
+.support {
+    width: 33.333%;
+    float: left;
+}
+
+.income {
+    width: 33.333%;
+    float: left;
+}
+.dataProtection {
+    width: 33.333%;
+    float: left;
+}
+
+.guarantee {
+    width: 33.333%;
+    float: left;
+}
+
 .news {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 0px 0 100px 0;
 }
 
 .news h2 {
@@ -707,6 +852,7 @@ header .menu {
     text-transform: uppercase;
     color: #202b2f;
     text-align: center;
+    padding: 50px 0 50px 0;
 }
 
 .news span {
@@ -733,7 +879,7 @@ header .menu {
 }
 .news button {
     font-size: 15px;
-    line-height: 83px;
+    line-height: 30px;
     letter-spacing: 0.050em;
     font-weight: 700;
     text-transform: uppercase;
@@ -745,6 +891,21 @@ header .menu {
     border-radius: 25px;
 }
 
+.newsCard1 {
+    width: 33.333%;
+    float: left;
+}
+
+.newsCard2 {
+    width: 33.333%;
+    float: left;
+}
+
+.newsCard3 {
+    width: 33.333%;
+    float: left;
+}
+
 .currencyLogo {
     background-color: #c9d3db;
 }
@@ -752,8 +913,14 @@ header .menu {
 footer .leftBlock span[class*="icon"] {
     font-size: 25px;
     color: #ffffff;
+    line-height: 24px;
+    display: block;
+}
+
+footer .leftBlock a {
     text-decoration: none;
 }
+
 footer {
     background-color: #202b2f;
 }
@@ -778,6 +945,10 @@ footer .copyrightInformation {
     text-decoration: none;
 }
 
+.menuFooter a.active {
+    color: #1fe096;
+}
+
 .rightBlock span {
     font-size: 15px;
     font-weight: 500;
@@ -799,4 +970,97 @@ footer .copyrightInformation {
     line-height: 24px;
     letter-spacing: 0.025em;
     color: #06a9eb;
+}
+
+.leftBlock {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+.menuFooter {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+.rightBlock {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+.banner2 {
+    height: 380px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner2 h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.history{
+     font-size: 17px;
+     line-height: 30px;
+     letter-spacing: 0.025em;
+     color: #202b2f;
+}
+
+.history .address span {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.history button {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.history span{
+    font-weight: 700;
+}
+
+.history .info2 a {
+    color: #03a3f4;
+}
+
+.qualities2 {
+    height: 1160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.qualities2 h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #202b2f;
+    text-align: center;
+}
+
+.qualities2 span[class*="icon"] {
+    font-size: 55px;
+}
+
+.qualities2 span:nth-child(2) {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #202b2f;
+}
+
+.qualities2 p {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
 }
