@@ -513,7 +513,7 @@ header .menu li{
     background-color: #59c9ef;
     border-radius: 30px;
     padding: 10px;
-    width: 265px;
+    width: 220px;
 }
 
 .choosing label {
@@ -528,7 +528,7 @@ header .menu li{
     background-color: #59c9ef;
     border-radius: 30px;
     padding: 10px;
-    width: 265px;
+    width: 230px;
 }
 .choosing option {
     font-size: 15px;
@@ -559,7 +559,7 @@ header .menu li{
     color: #ffffff;
     text-align: center;
     border: none;
-    width: 205px;
+    width: 200px;
     height: 45px;
     border-radius: 40px;
     background: #202b2f;
@@ -588,6 +588,16 @@ header .menu li{
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #03a3f4;
+
+}
+
+.block1 {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: center;
+}
+
+.block2 {
     display: inline-block;
     margin-right: 10px;
     vertical-align: center;
@@ -598,9 +608,7 @@ header .menu li{
     line-height: 20px;
     letter-spacing: 0.025em;
     color: #03a3f4;
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: center;
+
 }
 .scheme > span {
     font-size: 177px;
@@ -622,9 +630,6 @@ header .menu li{
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #44d29d;
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: center;
 }
 
 .rec {
@@ -632,9 +637,7 @@ header .menu li{
     line-height: 20px;
     letter-spacing: 0.025em;
     color: #44d29d;
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: center;
+
 }
 
 .text p {
@@ -1063,4 +1066,26 @@ footer .copyrightInformation {
     line-height: 22px;
     letter-spacing: 0.025em;
     color: #202b2f;
+}
+.license {
+    width: 480px;
+    float: right;
+}
+
+.imgOffice {
+    width: 470px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.choosing2 .item {
+    width: 33%;
+    float: left;
+
 }
