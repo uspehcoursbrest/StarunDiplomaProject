@@ -41,25 +41,37 @@ ul {
     border-radius: 25px;
 }
 
+header .logo {
+    padding-right: 220px;
+}
+
+header .logreg {
+    text-align: right;
+}
 header .englishVersion {
     display: inline-block;
-    padding: 12px;
+    padding: 20px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 header .russianVersion {
     display: inline-block;
-    padding: 12px;
+    padding: 20px;
     background-repeat: no-repeat;
     background-position: center;
 }
-header .topline span[class*="icon"] {
+
+header .lang {
+    text-align: right;
+}
+header .social {
     font-size: 20px;
     color: #202b2f;
+    text-align: right;
 }
 
-header .topline a {
+header a {
     text-decoration: none;
 }
 header .time {
@@ -67,12 +79,14 @@ header .time {
     line-height: 17px;
     font-weight: 700;
     color: #3c9ef1;
+    text-align: right;
 }
 
 header .date {
     font-size: 13px;
     line-height: 14px;
     color: #202b2f;
+    text-align: right;
 }
 
 header .year {
@@ -80,6 +94,8 @@ header .year {
     line-height: 16px;
     font-weight: 700;
     color: #202b2f;
+    -ms-text-align-last: right;
+    text-align-last: left;
 }
 
 header .menu a {
@@ -100,18 +116,30 @@ header .menu {
 
 header .menu li{
     display: inline-block;
-    margin-right: 52px;
+    margin-right: 53px;
 }
 
 .menu ul {
     text-align: center;
 }
-.bannerStart {
+
+header .table {
+    display: table;
+}
+
+header .logo, header .logreg, header .lang,
+header .social, header .time, header .data {
+    display: table-cell;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.exAdv {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.titMain {
+.banner h1 {
     font-size: 60px;
     line-height: 60px;
     letter-spacing: 0.025em;
@@ -119,26 +147,29 @@ header .menu li{
     text-transform: uppercase;
     color: #ffffff;
     text-align: right;
+    padding-top: 100px;
 }
 
-.bannerStart h2 {
+.banner h2 {
     font-size: 30px;
     line-height: 60px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
     text-align: right;
+    padding-top: 20px;
 }
 
-.bannerStart p {
+.banner p {
     font-size: 17px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #ffffff;
     text-align: right;
+    padding-top: 30px;
 }
 
-.bannerStart button {
+.banner button {
     font-size: 17px;
     line-height: 30px;
     letter-spacing: 0.050em;
@@ -154,6 +185,7 @@ header .menu li{
     width: 310px;
     background-color: #ffffff;
     border-radius: 25px;
+    margin-top: 30px;
 }
 
 .exchange .item span.coin {
@@ -188,12 +220,21 @@ header .menu li{
     font-size: 30px;
 }
 
-.advantages {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+.banner {
+    position: relative;
 }
 
+.imageLaptop {
+    position: absolute;
+    display: block;
+    top: 80%;
+    left: 35%;
+}
+
+.advantagesIcon {
+    margin-top: 10px;
+}
 .advantagesIcon span:first-child {
     font-size: 40px;
     color: #202b2f;
@@ -912,6 +953,18 @@ header .menu li{
 .currencyLogo {
     background-color: #c9d3db;
 }
+
+.currencyLogo .table {
+    display: table;
+    width: 100%;
+}
+
+.currencyLogo .cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px 0 50px 0;
+}
+
 
 footer .leftBlock span[class*="icon"] {
     font-size: 25px;
