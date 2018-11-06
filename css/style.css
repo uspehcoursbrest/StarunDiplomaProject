@@ -5,6 +5,12 @@
 body {
     margin: 0 auto;
     font-family: "Montserrat";
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -23,11 +29,7 @@ ul {
     padding: 0 15px;
 }
 
-.gradient {
-    background: linear-gradient(to right, #009cfe, #1fe096);
-    border: none;
-    border-radius: 30px;
-}
+
 .topline button {
     font-size: 12px;
     line-height: 30px;
@@ -41,6 +43,9 @@ ul {
     border-radius: 25px;
 }
 
+header {
+    background: #fff;
+}
 header .logo {
     padding-right: 220px;
 }
@@ -56,6 +61,7 @@ header .logreg {
     left: -30px;
     top: 10px;
 }
+
 .logreg .buttonGreen {
     position: absolute;
     left: 85px;
@@ -79,6 +85,7 @@ header .russianVersion {
 header .lang {
     text-align: right;
 }
+
 header .social {
     font-size: 20px;
     color: #202b2f;
@@ -88,6 +95,7 @@ header .social {
 header a {
     text-decoration: none;
 }
+
 header .time {
     font-size: 33px;
     line-height: 17px;
@@ -120,15 +128,16 @@ header .menu a {
     color: #ffffff;
     text-decoration: none;
 }
+
 header .menu a.active {
     color: #1ee096;
 }
 
 header .menu {
     background-color: #202b2f;
- }
+}
 
-header .menu li{
+header .menu li {
     display: inline-block;
     margin-right: 53px;
 }
@@ -153,6 +162,7 @@ header .social, header .time, header .data {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .banner h1 {
     font-size: 60px;
     line-height: 60px;
@@ -185,13 +195,23 @@ header .social, header .time, header .data {
 
 .banner button {
     font-size: 17px;
-    line-height: 30px;
+    line-height: 35px;
     letter-spacing: 0.050em;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
     height: 60px;
     width: 300px;
+    margin-left: 75%;
+    box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.11);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
+    border: none;
+    border-radius: 30px;
 }
 
 .exchange {
@@ -200,7 +220,9 @@ header .social, header .time, header .data {
     background-color: #ffffff;
     border-radius: 25px;
     margin-top: 30px;
- }
+    margin-left: 75%;
+    box-shadow: 0px 0px 50px 15px rgba(0,0,0,0.15);
+}
 
 .exchange .item {
     position: relative;
@@ -242,24 +264,26 @@ header .social, header .time, header .data {
 
 .banner {
     position: relative;
+    height: 1050px;
 }
 
 .imageLaptop {
     position: absolute;
-
-    top: 80%;
-    left: 35%;
+    top: 82%;
+    left: 37%;
 }
 
 .adv {
     width: 390px;
     color: #ffffff;
 }
+
 .adv .item {
     padding-left: 50px;
     position: relative;
     padding-bottom: 25px;
 }
+
 .advantagesIcon span:first-child {
     font-size: 40px;
     color: #202b2f;
@@ -309,7 +333,8 @@ header .social, header .time, header .data {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
- }
+}
+
 .about h2 {
     font-size: 30px;
     font-weight: 700;
@@ -325,13 +350,14 @@ header .social, header .time, header .data {
     width: 270px;
 }
 
-.location span:first-child{
+.location span:first-child {
     font-size: 60px;
     color: #009dfe;
     position: absolute;
     left: 0px;
     top: 0px;
 }
+
 .location span:last-child {
     font-size: 15px;
     line-height: 22px;
@@ -372,26 +398,27 @@ header .social, header .time, header .data {
     height: 60px;
 }
 
- .plans h2 {
-     font-size: 30px;
-     font-weight: 700;
-     line-height: 83px;
-     letter-spacing: 0.025em;
-     text-transform: uppercase;
-     color: #202b2f;
-     text-align: center;
- }
+.plans h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 83px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #202b2f;
+    text-align: center;
+}
 
- .plans p {
-     font-size: 17px;
-     line-height: 30px;
-     letter-spacing: 0.025em;
-     color: #202b2f;
-     text-align: center;
- }
+.plans p {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+    text-align: center;
+}
 
 .plans {
     margin: 0 -15px;
+    background: #fff;
 }
 
 .card1 {
@@ -414,13 +441,16 @@ header .social, header .time, header .data {
     float: left;
     padding: 15px;
 }
+
 .card1 .leftcard span:first-child {
     font-size: 30px;
 
 }
+
 .card1 .leftcard span:nth-child(2) {
     font-size: 90px;
- }
+}
+
 .card1 .leftcard span:nth-child(3) {
     font-size: 17px;
 }
@@ -437,7 +467,7 @@ header .social, header .time, header .data {
     width: 205px;
     height: 45px;
     border-radius: 40px;
-    box-shadow: 0 0 21px rgba(0,0,0,0.5);
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.5);
 }
 
 .card1 .rightcard {
@@ -487,12 +517,15 @@ header .social, header .time, header .data {
     float: left;
     padding: 15px;
 }
+
 .card2 .leftCard span.titPlan {
     font-size: 30px;
 }
+
 .card2 .leftCard span:nth-child(2) {
     font-size: 90px;
 }
+
 .card2 .leftCard span:nth-child(3) {
     font-size: 17px;
 }
@@ -509,7 +542,7 @@ header .social, header .time, header .data {
     width: 205px;
     height: 45px;
     border-radius: 40px;
-    box-shadow: 0 0 21px rgba(0,0,0,0.5);
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.5);
 }
 
 .card2 .rightCard {
@@ -546,7 +579,6 @@ header .social, header .time, header .data {
 }
 
 .calculator {
-    background: linear-gradient(to right, #019efc, #1ee097);
     padding: 50px 0 60px 0;
 }
 
@@ -564,6 +596,7 @@ header .social, header .time, header .data {
     line-height: 24px;
     color: #ffffff;
     display: block;
+
 }
 
 .calculator .item input {
@@ -574,6 +607,7 @@ header .social, header .time, header .data {
     border-radius: 30px;
     padding: 10px;
     width: 220px;
+    box-shadow: inset 3px 3px 10px 4px rgba(0,0,0,0.07);
 }
 
 .calculator .item label {
@@ -591,6 +625,7 @@ header .social, header .time, header .data {
     padding: 10px;
     width: 230px;
 }
+
 .calculator .item option {
     font-size: 15px;
     font-weight: 700;
@@ -612,6 +647,7 @@ header .social, header .time, header .data {
     line-height: 50px;
     color: #202b2f;
 }
+
 .calculatorButton {
     font-size: 15px;
     font-weight: 700;
@@ -672,6 +708,7 @@ header .social, header .time, header .data {
     color: #03a3f4;
 
 }
+
 .scheme > span {
     font-size: 177px;
     font-weight: 700;
@@ -712,7 +749,7 @@ header .social, header .time, header .data {
 
 .refferal button {
     font-size: 17px;
-    line-height: 83px;
+    line-height: 30px;
     letter-spacing: 0.050em;
     font-weight: 700;
     text-transform: uppercase;
@@ -720,12 +757,23 @@ header .social, header .time, header .data {
     text-align: center;
     height: 60px;
     width: 205px;
+    box-shadow: 3px 3px 15px 4px rgba(0,0,0,0.11);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
+    border: none;
+    border-radius: 30px;
+
 }
 
 .statistics {
-    background-size: cover;
+
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+
 }
 
 .totalStatistics {
@@ -734,6 +782,7 @@ header .social, header .time, header .data {
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
+
 .totalStatistics span[class*="icon"] {
     font-size: 40px;
 }
@@ -748,12 +797,14 @@ header .social, header .time, header .data {
     color: #202b2f;
 }
 
+
 .lastDeposit .partOne span:nth-child(1) {
     font-size: 15px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #202b2f;
+    display: table-cell;
 }
 
 .lastDeposit .partOne span:nth-child(2) {
@@ -762,6 +813,7 @@ header .social, header .time, header .data {
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #202b2f;
+    display: table-row;
 }
 
 .lastDeposit .partOne span:nth-child(3) {
@@ -770,8 +822,32 @@ header .social, header .time, header .data {
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0.025em;
+    display: table-row;
 }
 
+.partOne {
+    display: table;
+    background: #fff;
+}
+
+.item1 .partTwo {
+    background: #04a4f2;
+}
+
+.item2 .partTwo {
+    background: #44d29d;
+}
+
+.item1 {
+
+    width: 520px;
+    box-shadow: 0px 0px 50px 15px rgba(0,0,0,0.15);
+}
+.item2 {
+
+    width: 520px;
+    box-shadow: 0px 0px 50px 15px rgba(0,0,0,0.15);
+}
 .lastDeposit .partTwo span {
     font-size: 17px;
     font-weight: 700;
@@ -819,12 +895,12 @@ header .social, header .time, header .data {
     float: left;
 }
 
-.itemVizitors{
+.itemVizitors {
     width: 20%;
     float: left;
 }
 
-.itemWithdrawls{
+.itemWithdrawls {
     width: 20%;
     float: left;
 }
@@ -833,6 +909,7 @@ header .social, header .time, header .data {
     width: 20%;
     float: left;
 }
+
 .itemUsers {
     width: 20%;
     float: left;
@@ -842,6 +919,7 @@ header .social, header .time, header .data {
     width: 50%;
     float: left;
 }
+
 .lastWithdrawals {
     width: 50%;
     float: left;
@@ -899,6 +977,7 @@ header .social, header .time, header .data {
     background-repeat: no-repeat;
     background-position: center;
     padding: 0px 0 100px 0;
+    background: #fff;
 }
 
 .news h2 {
@@ -934,6 +1013,7 @@ header .social, header .time, header .data {
     letter-spacing: 0.025em;
     color: #202b2f;
 }
+
 .news button {
     font-size: 15px;
     line-height: 30px;
@@ -946,21 +1026,25 @@ header .social, header .time, header .data {
     width: 165px;
     height: 45px;
     border-radius: 25px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.11);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
+
 }
 
-.newsCard1 {
-    width: 33.333%;
+.card .item {
+    width: 30.333%;
     float: left;
-}
-
-.newsCard2 {
-    width: 33.333%;
-    float: left;
-}
-
-.newsCard3 {
-    width: 33.333%;
-    float: left;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.15);
+    border-radius: 10%;
 }
 
 .currencyLogo {
@@ -978,7 +1062,6 @@ header .social, header .time, header .data {
     padding: 50px 0 50px 0;
 }
 
-
 footer .leftBlock span[class*="icon"] {
     font-size: 25px;
     color: #ffffff;
@@ -993,6 +1076,7 @@ footer .leftBlock a {
 footer {
     background-color: #202b2f;
 }
+
 footer .copyrightInformation {
     font-size: 15px;
     line-height: 24px;
@@ -1058,12 +1142,20 @@ footer .copyrightInformation {
     vertical-align: top;
     margin-right: 30px;
 }
+
+/*2 страница*/
+
+.aboutUs {
+    background: #fff;
+}
 .banner2 {
-    height: 380px;
+    height: 390px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
+
 .banner2 h1 {
     font-size: 60px;
     font-weight: 700;
@@ -1071,12 +1163,18 @@ footer .copyrightInformation {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+
 }
-.history{
-     font-size: 17px;
-     line-height: 30px;
-     letter-spacing: 0.025em;
-     color: #202b2f;
+
+.history {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+    padding-top: 130px;
 }
 
 .history .address span {
@@ -1090,12 +1188,59 @@ footer .copyrightInformation {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-.history span{
+
+.history span {
     font-weight: 700;
 }
 
 .history .info2 a {
     color: #03a3f4;
+}
+
+.info1 p {
+    width: 660px;
+    float: left;
+    padding: 20px;
+}
+
+.info1 .license {
+    width: 470px;
+    float: left;
+}
+
+.address .item {
+    width: 100%;
+    float: left;
+    padding: 30px 30px;
+
+}
+
+.item .buttonBlue {
+    width: 50%;
+    float: left;
+}
+
+.item .buttonGreen {
+    width: 50%;
+    float: right;
+}
+
+.imgOffice {
+    width: 40%;
+    float: left;
+
+}
+
+.info2 div[class^="text"] {
+    padding: 30px;
+    text-align: left;
+    margin: 0 auto;
+
+}
+
+.info2 .text1 {
+    width: 60%;
+    float: left;
 }
 
 .qualities2 {
@@ -1118,7 +1263,7 @@ clear::after {
     margin-bottom: 80px;
 }
 
-.qualities2 h2{
+.qualities2 h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 84px;
@@ -1126,12 +1271,14 @@ clear::after {
     text-transform: uppercase;
     color: #202b2f;
     text-align: center;
+    padding: 100px 0 80px 0;
 }
 
 .qualities2 span[class*="icon"] {
     font-size: 55px;
     display: block;
     margin: 0px auto;
+    padding-bottom: 30px;
 }
 
 .qualities2 span:nth-child(2) {
@@ -1141,6 +1288,7 @@ clear::after {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #202b2f;
+    padding-top: 30px;
 }
 
 .qualities2 p {
@@ -1148,16 +1296,9 @@ clear::after {
     line-height: 22px;
     letter-spacing: 0.025em;
     color: #202b2f;
-}
-.license {
-    width: 480px;
-    float: right;
+    padding-top: 30px;
 }
 
-.imgOffice {
-    width: 470px;
-    float: left;
-    margin: 0 20px 0 0;
-}
+
 
 
