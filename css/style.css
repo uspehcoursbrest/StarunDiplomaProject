@@ -860,17 +860,15 @@ header .social, header .time, header .data {
     display: table;
     width: 570px;
     height: 360px;
-    border-radius: 30%;
 }
-.table .tableRow {
+.tableRow .item{
     display: table-row;
     background-color: #fff;
     padding: 30px;
 }
 
-.table .item span {
-    display: table-cell;
-    text-align: center;
+.tableRow .item span {
+    text-align: right;
     padding-right: 20px;
 }
 
