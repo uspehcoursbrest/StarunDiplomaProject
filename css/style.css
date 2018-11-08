@@ -5,12 +5,7 @@
 body {
     margin: 0 auto;
     font-family: "Montserrat";
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
-    background: #009cff; /* Old browsers */
-    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1);
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -96,12 +91,15 @@ header a {
     text-decoration: none;
 }
 
-header .time {
+header .time{
     font-size: 33px;
     line-height: 17px;
     font-weight: 700;
     color: #3c9ef1;
     text-align: right;
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header .date {
@@ -116,8 +114,8 @@ header .year {
     line-height: 16px;
     font-weight: 700;
     color: #202b2f;
-    -ms-text-align-last: right;
-    text-align-last: left;
+
+    text-align: right;
 }
 
 header .menu a {
@@ -356,6 +354,9 @@ header .social, header .time, header .data {
     position: absolute;
     left: 0px;
     top: 0px;
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .location span:last-child {
@@ -580,6 +581,12 @@ header .social, header .time, header .data {
 
 .calculator {
     padding: 50px 0 60px 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1);
 }
 
 .calculator .item {
@@ -667,6 +674,7 @@ header .social, header .time, header .data {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 .refferal h2 {
@@ -677,6 +685,35 @@ header .social, header .time, header .data {
     text-transform: uppercase;
     color: #202b2f;
     text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.scheme .block1 {
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: center;
+    width: 390px;
+    height: 390px;
+}
+.and span{
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: center;
+    font-size: 177px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+
+}
+.scheme .block2 {
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: center;
+    width: 390px;
+    height: 390px;
 }
 
 .six {
@@ -686,40 +723,14 @@ header .social, header .time, header .data {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #03a3f4;
-
+    display: block;
 }
-
-.block1 {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: center;
-}
-
-.block2 {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: center;
-}
-
 .rc {
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.025em;
     color: #03a3f4;
-
-}
-
-.scheme > span {
-    font-size: 177px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-align: center;
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: center;
+    display: block;
 }
 
 .one {
@@ -729,6 +740,7 @@ header .social, header .time, header .data {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #44d29d;
+    display: block;
 }
 
 .rec {
@@ -736,9 +748,12 @@ header .social, header .time, header .data {
     line-height: 20px;
     letter-spacing: 0.025em;
     color: #44d29d;
-
+    display: block;
 }
 
+.scheme img {
+    display: block;
+}
 .text p {
     font-size: 17px;
     line-height: 30px;
@@ -770,10 +785,15 @@ header .social, header .time, header .data {
 }
 
 .statistics {
-
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
 }
 
 .totalStatistics {
@@ -785,68 +805,77 @@ header .social, header .time, header .data {
 
 .totalStatistics span[class*="icon"] {
     font-size: 40px;
+    text-align: center;
+    display: block;
+    padding-top: 250px;
 }
 
 .totalStatistics span:nth-child(2) {
     font-size: 15px;
     color: #ffffff;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
 }
 
 .totalStatistics span:nth-child(3) {
     font-size: 30px;
     color: #202b2f;
+    text-align: center;
+    display: block;
 }
 
+.totalStatistics .item {
+    width: 20%;
+    float: left;
+}
 
-.lastDeposit .partOne span:nth-child(1) {
+/*---------------Блоки с таблицами по выплатам--------------*/
+
+.lastDeposit .item span:nth-child(1) {
     font-size: 15px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #202b2f;
-    display: table-cell;
 }
 
-.lastDeposit .partOne span:nth-child(2) {
+.lastDeposit .item span:nth-child(2) {
     font-weight: 400;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #202b2f;
-    display: table-row;
 }
 
-.lastDeposit .partOne span:nth-child(3) {
+.lastDeposit .item span:nth-child(3) {
     color: #3c9ef1;
     font-size: 15px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0.025em;
-    display: table-row;
 }
 
-.partOne {
+.table {
     display: table;
-    background: #fff;
+    width: 570px;
+    height: 360px;
+    border-radius: 30%;
+}
+.table .tableRow {
+    display: table-row;
+    background-color: #fff;
+    padding: 30px;
 }
 
-.item1 .partTwo {
-    background: #04a4f2;
+.table .item span {
+    display: table-cell;
+    text-align: center;
+    padding-right: 20px;
 }
 
-.item2 .partTwo {
-    background: #44d29d;
-}
-
-.item1 {
-
-    width: 520px;
-    box-shadow: 0px 0px 50px 15px rgba(0,0,0,0.15);
-}
-.item2 {
-
-    width: 520px;
-    box-shadow: 0px 0px 50px 15px rgba(0,0,0,0.15);
+.lastDeposit .partTwo{
+    background-color: #04a4f2;
 }
 .lastDeposit .partTwo span {
     font-size: 17px;
@@ -855,6 +884,7 @@ header .social, header .time, header .data {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
+    text-align: center;
 }
 
 .lastWithdrawals span:nth-child(1) {
@@ -890,31 +920,6 @@ header .social, header .time, header .data {
     color: #ffffff;
 }
 
-.itemDays {
-    width: 20%;
-    float: left;
-}
-
-.itemVizitors {
-    width: 20%;
-    float: left;
-}
-
-.itemWithdrawls {
-    width: 20%;
-    float: left;
-}
-
-.itemDepozits {
-    width: 20%;
-    float: left;
-}
-
-.itemUsers {
-    width: 20%;
-    float: left;
-}
-
 .lastDeposit {
     width: 50%;
     float: left;
@@ -946,6 +951,9 @@ header .social, header .time, header .data {
     font-size: 55px;
     display: block;
     margin: 0px auto;
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .qualities span:nth-child(2) {
