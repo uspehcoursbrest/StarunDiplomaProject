@@ -1111,8 +1111,7 @@ header .social, header .time {
 }
 
 /*---------------Блоки с таблицами по выплатам--------------*/
-
-.lastDeposit .item span:nth-child(1) {
+/*.lastDeposit .item span:nth-child(1) {
     font-size: 15px;
     font-weight: 600;
     line-height: 30px;
@@ -1227,6 +1226,66 @@ border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 90px;
+}
+*/
+
+.statTb1 .table{
+    padding: 30px;
+    background-color: #fff;
+}
+
+.table.full{
+    width: 100%;
+}
+.table{
+    display: table;
+}
+
+.statTb1 .table .tRow .name{
+    font-size: 15px;
+    line-height: 1;
+    color: #202b2f;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.table .tCell.middle {
+    vertical-align: middle;
+}
+
+.table .tCell{
+    display: table-cell;
+}
+
+.statTb1 .table .tRow .date{
+    width: 215px;
+    font-size: 13px;
+    line-height: 1;
+    color: #202b2f;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+}
+.statTb1 .table .tRow .sum{
+    color: #44d29d;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+}
+.statTb1 .table .tRow .sum1{
+    color: #03a3f4;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+}
+
+.table .tCell.right{
+    text-align: right;
+}
+
+.table .tCell.botton{
+    vertical-align: bottom;
 }
 
 .qualities {
