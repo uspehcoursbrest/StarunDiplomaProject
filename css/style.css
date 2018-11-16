@@ -41,10 +41,15 @@ ul {
 }
 .gradient:hover {
     color: #fff;
-    background: linear-gradient(to right, #009cff 0%, #1fe195 100%);
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
+    font-size: 20px;
     border: 4px solid rgba(60,158,241,0.80);
     transition: all 0.3s;
  }
@@ -56,6 +61,18 @@ button:hover {
     background: none;
     transition: all 0.3s;
 }
+.social span:hover{
+    background: #fff;
+    border: 1px solid #2b383c;
+    transition: all 0.5s;
+}
+
+footer .social span:hover{
+    background: #1e2c2d;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+}
+
 .leftCard .buttonGreen:hover{
     border: 4px solid #ffffff;
     transition: all 0.3s;
@@ -150,7 +167,11 @@ header a {
 }
 
 header .time{
-    text-align: right;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 10px;
+    margin-left: 5px;
+
    }
 header .time>span{
     font-size: 33px;
@@ -170,7 +191,7 @@ header .data{
     text-align: left;
     padding-right: 3px;
     display: inline-block;
-    width: 40px;
+
 }
 header .date {
     font-size: 13px;
@@ -183,7 +204,7 @@ header .date {
 
 header .year {
     font-size: 15px;
-    line-height: 16px;
+    line-height: 1;
     font-weight: 700;
     color: #202b2f;
     text-align: left;
@@ -228,7 +249,7 @@ header .table {
 }
 
 header .logo, header .logreg, header .lang,
-header .social, header .time {
+header .social, header .timeDate {
     display: table-cell;
     width: 20%;
     vertical-align: middle;
@@ -671,6 +692,7 @@ header .social, header .time {
     height: 45px;
     border-radius: 40px;
     box-shadow: 0 0 21px rgba(0, 0, 0, 0.5);
+    margin-left: 0px;
 }
 
 .card2 .rightCard {
@@ -814,30 +836,11 @@ header .social, header .time {
     background: #202b2f;
 }
 
-.refferal {
-    position: relative;
-    background-image: url(../img/png/background-statistic.png);
-    background-position: center bottom;
-    background-repeat: repeat;
-    z-index: 1;
-}
-
-.refferal:before{
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 50%;
-    margin-left: -960px;
-    width: 1920px;
-    height: 1070px;
-    background-image: url(../img/png/background-refferal-program.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
+.refferalStat {
     background-size: cover;
-    padding-bottom: 60px;
-    z-index: -1;
+    background-position: center;
+    background-repeat: repeat;
+
 }
 
 .refferal h2 {
@@ -1111,123 +1114,6 @@ header .social, header .time {
 }
 
 /*---------------Блоки с таблицами по выплатам--------------*/
-/*.lastDeposit .item span:nth-child(1) {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.025em;
-    color: #202b2f;
-}
-
-.lastDeposit .item span:nth-child(2) {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
-    letter-spacing: 0.025em;
-    color: #202b2f;
-
-}
-
-.lastDeposit .item span:nth-child(3) {
-    color: #3c9ef1;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.025em;
-
-}
-
-.lastDeposite .table {
-    display: table;
-    width: 570px;
-    height: 360px;
-}
-.tableRow .item{
-    display: table-row;
-    padding-right: 60px;
-}
-
-.tableRow {
-    height: 30px;
-    display: table-cell;
-
-}
-.tableRow .item span {
-    text-align: right;
-    padding-right: 20px;
-}
-
-
-.lastDeposit .partTwo span {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 83px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-align: center;
-}
-
-.lastWithdrawals span:nth-child(1) {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.025em;
-    color: #202b2f;
-}
-
-.lastWithdrawals span:nth-child(2) {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
-    letter-spacing: 0.025em;
-    color: #202b2f;
-}
-
-.lastWithdrawals span:nth-child(3) {
-    color: #44d29d;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.025em;
-}
-
-.lastWithdrawals .partTwo span {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 83px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.lastDeposit {
-    padding: 15px;
-    float: left;
-    width: 50%;
-    color: #ffffff;
-border-radius: 20px;
-    height: 460px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 90px;
-
-}
-
-.lastWithdrawals {
-    padding: 15px;
-    float: left;
-    width: 50%;
-    color: #ffffff;
-    border-radius: 20px;
-    height: 460px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 90px;
-}
-*/
 
 .statTb1 .table{
     padding: 30px;
@@ -1239,6 +1125,14 @@ border-radius: 20px;
 }
 .table{
     display: table;
+}
+
+.statTb1 .table .tRow{
+    height: 30px;
+}
+
+.table .tRow {
+    display: table-row;
 }
 
 .statTb1 .table .tRow .name{
@@ -1266,18 +1160,21 @@ border-radius: 20px;
     letter-spacing: 0.025em;
 }
 .statTb1 .table .tRow .sum{
-    color: #44d29d;
+    color: #04a4f2;
     font-size: 15px;
-    font-weight: 600;
-    line-height: 30px;
+    font-weight: bold;
+    line-height: 1;
     letter-spacing: 0.025em;
+    width: 95px;
 }
+
 .statTb1 .table .tRow .sum1{
-    color: #03a3f4;
+    color: #44d39e;
     font-size: 15px;
-    font-weight: 600;
-    line-height: 30px;
+    font-weight: bold;
+    line-height: 1;
     letter-spacing: 0.025em;
+    width: 95px;
 }
 
 .table .tCell.right{
@@ -1288,11 +1185,78 @@ border-radius: 20px;
     vertical-align: bottom;
 }
 
+.table1 .partTwoB {
+    height: 50px;
+    text-align: center;
+    background-color: #04a4f2;
+}
+
+.table1 .partTwoG {
+    height: 50px;
+    text-align: center;
+    background-color: #44d39e;
+}
+.table1 .partTwoB span{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 20px 0;
+}
+.table1 .partTwoG span{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 20px 0;
+}
+.statTb1 .table1 {
+    box-shadow: 0px 0px 27px rgba(0,0,0,0.21);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.refferalStat {
+    position: relative;
+    height: 1540px;
+}
+.statisticsWithdrawals{
+    width: 1200px;
+    float: left;
+    margin-top: 70px;
+    position: absolute;
+    top: 80%;
+}
+
+.totalStatistics {
+    float: left;
+    width: 100%;
+}
+
+.stat {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.statTb1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    float: left;
+}
+
+
 .qualities {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
+    padding-top: 290px;
 }
 
 .qualities h2 {
@@ -1306,12 +1270,17 @@ border-radius: 20px;
 }
 
 .qualities span[class*="icon"] {
-    font-size: 55px;
-    display: block;
-    margin: 0px auto;
-    background: linear-gradient(to right, #009cff 0%, #1fe195 100%);
+    font-size: 80px;
+   
+    color: #009cff;
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .qualities span:nth-child(2) {
@@ -1321,6 +1290,8 @@ border-radius: 20px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
+    display: block;
+    margin-top: 40px;
 }
 
 .qualities p {
@@ -1336,13 +1307,18 @@ border-radius: 20px;
     float: left;
     text-align: center;
     padding: 50px 40px;
+    display: block;
+}
+
+.qualities .wrap{
+    padding-bottom: 100px;
 }
 
 .news {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 0px 0 100px 0;
+    padding: 0px 0 90px 0;
     background: #fff;
 }
 
@@ -1357,12 +1333,17 @@ border-radius: 20px;
     padding: 50px 0 50px 0;
 }
 
+.news .item img{
+
+}
 .news span {
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.025em;
     color: #03a3f4;
+    padding-top: 20px;
+    display: block;
 }
 
 .news h3 {
@@ -1371,6 +1352,7 @@ border-radius: 20px;
     line-height: 24px;
     letter-spacing: 0.025em;
     color: #202b2f;
+    margin-top: 20px;
 }
 
 .news p {
@@ -1378,6 +1360,7 @@ border-radius: 20px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #202b2f;
+    margin-top: 10px;
 }
 
 .news button {
@@ -1387,7 +1370,6 @@ border-radius: 20px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-    background: linear-gradient(to right, #009cfe, #1fe096);
     border: none;
     width: 165px;
     height: 45px;
@@ -1410,7 +1392,7 @@ border-radius: 20px;
     margin: 0 15px;
     background-color: #fff;
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.15);
-    border-radius: 10%;
+    border-radius: 20px;
 }
 
 .currencyLogo {
@@ -1428,7 +1410,7 @@ border-radius: 20px;
     padding: 50px 0 50px 0;
 }
 
-footer .leftBlock span[class*="icon"] {
+footer .social span {
     font-size: 25px;
     color: #ffffff;
     line-height: 24px;
@@ -1451,8 +1433,8 @@ footer .leftBlock a {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 35px;
+    height: 35px;
     z-index: 7;
 }
 
@@ -1715,11 +1697,18 @@ clear::after {
     padding-top: 30px;
 }
 
+.mobileMenu{
+    display: block;
+}
+
 /*---------------------адаптив----------------------*/
 
 @media (max-width: 1199px) {
     .container {
         width: 950px;
+    }
+    .mobileMenu{
+        display: block;
     }
     header .logo{
         padding-right: 70px;
@@ -1737,8 +1726,13 @@ clear::after {
     .banner button{
         margin-left: 62%;
     }
+
+    .banner p{
+        padding-bottom: 30px;
+    }
     .exchange{
         margin-left: 62%;
+        margin-top: 50px;
     }
     .imageLaptop {
         display: none;
@@ -1746,11 +1740,19 @@ clear::after {
     .adv {
         width: 100%;
         padding-left: 15px;
+        padding-bottom: 50px;
+        margin-top: -300px;
     }
+.advantagesIcon{
+    margin-bottom: 0px;
+}
     .about {
-        padding-top: 90px;
-        padding-bottom: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         text-align: center;
+    }
+    .aboutText .btn{
+        margin-top: 30px;
     }
     .sertificate {
         width: 100%;
@@ -1758,7 +1760,7 @@ clear::after {
     }
     .location {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .location span:first-child {
         left: 206px;
@@ -1768,36 +1770,100 @@ clear::after {
         width: 100%;
         padding: 20px;
     }
+
+    .plans h2{
+        padding-top: 30px;
+    }
+    .plans p{
+        padding-top: 25px;
+    }
+
+    .cardAll{
+        padding-top: 0;
+    }
+
+    .card1{
+        -webkit-background-size: contain;
+        background-size: contain;
+        margin-bottom: 0px;
+    }
+    .card2{
+        -webkit-background-size: contain;
+        background-size: contain;
+        margin-bottom: 0px;
+    }
+    .card1 .leftcard span:first-child{
+        font-size: 26px;
+        padding-top: 65px;
+    }
     .card1 .leftcard span:nth-child(2) {
         font-size: 80px;
-        padding-top: 130px;
+        padding-top: 80px;
+    }
+    .card1 .leftcard span:nth-child(3){
+        font-size: 14px;
     }
     .card1 .leftcard {
-        padding: 10px;
+        padding: 15px;
     }
     .card1 .leftcard button {
         width: 175px;
         height: 45px;
     }
     .card1 .rightcard {
-        padding: 20px;
+        padding: 75px 20px;
+    }
+    .dailyInterest{
+        padding-top: 0;
+    }
+    .card1 .rightcard span:nth-child(1){
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .card1 .rightcard span:nth-child(2){
+        font-weight: normal;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+
+    .card2 .leftCard span.titPlan{
+        font-size: 26px;
+        padding-top: 60px;
     }
     .card2 .leftCard span:nth-child(2) {
-        font-size: 80px;
-        padding-top: 130px;
+        font-size: 75px;
+        padding-top: 80px;
     }
-    .card2 .leftCard{
-        padding: 0px;
+    .card2 .leftCard span:nth-child(3){
+        font-size: 14px;
     }
-    .card2 .leftCard button {
-        width: 175px;
-        height: 45px;
-        margin-left: -5px;
-        margin-top: 43px;
-    }
+.card2 .leftCard{
+    padding: 15px;
+ }
     .card2 .rightCard {
-        padding: 20px;
+        padding: 75px 20px;
     }
+    .totalProfit{
+        padding-top: 0;
+    }
+    .card2 .rightCard span:nth-child(1){
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .card2 .rightCard span:nth-child(2){
+        font-weight: normal;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .card2 .leftCard button{
+        width: 170px;
+        height: 45px;
+    }
+
+.calculator{
+    padding: 20px 0 30px 0;
+}
     .calculator .item {
         margin-right: 10px;
     }
@@ -1829,15 +1895,33 @@ clear::after {
         font-size: 100px;
     }
     .totalStatistics {
-        margin-top: 250px;
+        margin-top: 50px;
     }
     .refferal h2{
-        padding: 50px 0 0 0;
+        padding: 30px 0 0 0;
+    }
+    .refferal .text p{
+        margin-top: -45px;
+        margin-bottom: 30px;
+    }
+    .totalStatistics span:nth-child(2){
+        font-size: 13px;
+        padding-top: 15px;
+        line-height: 1;
+    }
+    .totalStatistics span:nth-child(3){
+        font-size: 22px;
+    }
+    .refferalStat{
+        height: 1200px;
     }
     .lastDeposit,
     .lastWithdrawals{
         margin-bottom: 50px;
-
+    }
+    .statisticsWithdrawals{
+        width: 950px;
+        top: 71%;
     }
    .card .item img{
        width: 220px;
@@ -1845,8 +1929,30 @@ clear::after {
     .card .item {
 border-radius: 20px;
         padding: 25px;
-        margin: 0 5px;
-
+        margin: 0 10px;
+    }
+    .qualities{
+        padding-top: 160px;
+    }
+    .qualities .item{
+        padding: 15px;
+    }
+    .qualities span:nth-child(2){
+        margin-top: 15px;
+    }
+    .news h2{
+        padding: 30px 0;
+    }
+    .news{
+        padding: 0 0 30px 0;
+    }
+    .currencyLogo .cell{
+        display: inline-block;
+        padding: 0 60px 0 60px;
+        text-align: center;
+    }
+    footer{
+        padding: 30px 0;
     }
 }
 
@@ -1855,16 +1961,1127 @@ border-radius: 20px;
     .container {
         width: 750px;
     }
+
+    .topline .table{
+        margin: 10px 0;
+    }
+    header .logo{
+        padding-right: 50px;
+    }
+    header .social {
+        padding-left: 9px;
+    }
+
+    .social span{
+        font-size: 25px;
+    }
+    .topline button{
+        width: 80px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .logreg .buttonGreen{
+        left: 25px;
+    }
+
+    header .time>span{
+        font-size: 26px;
+    }
+    header .data{
+        margin-left: 0;
+    }
+    header .menu a{
+        display: none;
+    }
+    header .menu{
+        height: 60px;
+    }
+    header .mobileMenu .menuMobile{
+        width: 45px;
+        height: 5px;
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        left: 93%;
+    }
+    .menuMobile:before{
+        content: '';
+        display: block;
+        width: 45px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: -12px;
+        left: 0;
+    }
+    .menuMobile:after{
+        content: '';
+        display: block;
+        width: 45px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 12px;
+        left: 0;
+    }
+
+    .banner h1 {
+        font-size: 44px;
+        padding-top: 50px;
+    }
+    .banner button{
+        margin-left: 66%;
+        width: 250px;
+    }
+
+    .banner p{
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+    .exchange{
+        margin-left: 66%;
+        margin-top: 50px;
+        height: 315px;
+        width: 250px;
+    }
+    .exchange .item{
+        padding-top: 25px;
+        margin-left: 58px;
+    }
+    .advantagesIcon span:first-child{
+        font-size: 50px;
+    }
+    .advantagesIcon span:last-child{
+        line-height: 20px;
+        left: 80px;
+    }
+    .adv .item{
+        padding-bottom: 70px;
+    }
+    .imageLaptop {
+        display: none;
+    }
+    .adv {
+        width: 100%;
+        padding-left: 15px;
+        padding-bottom: 50px;
+        margin-top: -300px;
+    }
+    .advantagesIcon{
+        margin-bottom: 0px;
+    }
+    .about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .aboutText .btn{
+        margin-top: 30px;
+    }
+    .sertificate {
+        width: 100%;
+
+    }
+    .location {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .location span:first-child {
+        left: 110px;
+        top: -20px;
+    }
+    .aboutText {
+        width: 100%;
+        padding: 20px;
+    }
+    .aboutText p{
+        font-size: 14px;
+    }
+    .plans h2{
+        padding-top: 30px;
+    }
+    .plans p{
+        padding-top: 25px;
+    }
+
+    .cardAll{
+        padding-top: 0;
+    }
+
+    .card1{
+        -webkit-background-size: contain;
+        background-size: 363px 495px;
+        margin-bottom: 55px;
+    }
+    .card2{
+        -webkit-background-size: contain;
+        background-size: 363px 495px;
+        margin-bottom: 55px;
+    }
+    .card1 .leftcard span:first-child{
+        font-size: 26px;
+        padding-top: 65px;
+    }
+    .card1 .leftcard span:nth-child(2) {
+        font-size: 56px;
+        padding-top: 80px;
+    }
+    .card1 .leftcard span:nth-child(3){
+        font-size: 14px;
+    }
+    .card1 .leftcard {
+        padding: 15px;
+    }
+    .card1 .leftcard button {
+        width: 175px;
+        height: 45px;
+        margin-top: 87px;
+        margin-left: 68px;
+    }
+    .card1 .rightcard {
+        padding: 43px 20px;
+    }
+    .dailyInterest{
+        padding-top: 0;
+    }
+    .card1 .rightcard span:nth-child(1){
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .card1 .rightcard span:nth-child(2){
+        font-weight: normal;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+
+    .card2 .leftCard span.titPlan{
+        font-size: 26px;
+        padding-top: 60px;
+    }
+    .card2 .leftCard span:nth-child(2) {
+        font-size: 56px;
+        padding-top: 80px;
+    }
+    .card2 .leftCard span:nth-child(3){
+        font-size: 14px;
+    }
+    .card2 .leftCard{
+        padding: 15px;
+    }
+    .card2 .rightCard {
+        padding: 43px 20px;
+    }
+    .totalProfit{
+        padding-top: 0;
+    }
+    .card2 .rightCard span:nth-child(1){
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .card2 .rightCard span:nth-child(2){
+        font-weight: normal;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .card2 .leftCard button{
+        width: 170px;
+        height: 45px;
+        margin-top: 126px;
+        margin-left: 60px;
+    }
+
+    .calculator{
+        padding: 20px 0 30px 0;
+    }
+    .calculator .item {
+        margin-right: 10px;
+    }
+    .calculator .item span:last-child {
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .calculator .item span:first-child{
+        font-size: 14px;
+    }
+    .calculator .item input {
+        width: 160px;
+    }
+    .calculator .item select {
+        width: 160px;
+    }
+    .calculator .item label{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .calculatorButton{
+        width: 180px;
+    }
+
+    .blocks .block1 {
+        padding-right: 140px;
+        padding-left: 0px;
+    }
+
+    .blocks .block2 {
+        display: inline-block;
+        padding-right: 0px;
+        padding-left: 140px;
+    }
+    .scheme .and{
+        width: 94px;
+    }
+    .blocks .item1{
+        width: 210px;
+        height: 210px;
+    }
+    .blocks .item2{
+        width: 210px;
+        height: 210px;
+    }
+    .blocks .item1 .number{
+        font-size: 100px;
+    }
+    .blocks .item2 .number{
+        font-size: 100px;
+    }
+    .scheme .and{
+        font-size: 100px;
+    }
+    .totalStatistics {
+        margin-top: 130px;
+    }
+    .refferal h2{
+        padding: 30px 0 0 0;
+    }
+    .refferal .text p{
+        margin-top: -45px;
+        margin-bottom: 30px;
+    }
+    .totalStatistics span:nth-child(2){
+        font-size: 13px;
+        padding-top: 15px;
+        line-height: 1;
+    }
+    .totalStatistics span:nth-child(3){
+        font-size: 22px;
+    }
+    .refferalStat{
+        height: 1080px;
+    }
+    .lastDeposit,
+    .lastWithdrawals{
+        margin-bottom: 50px;
+    }
+    .statisticsWithdrawals{
+        display: none;
+    }
+    .card .item img{
+        display: none;
+    }
+    .card .item {
+        border-radius: 20px;
+        padding: 15px;
+        margin: 0 10px;
+        width: 30%;
+    }
+    .news h3{
+        font-size: 15px;
+    }
+    .news p{
+        font-size: 13px;
+    }
+    .qualities{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .qualities .item{
+        padding: 15px;
+    }
+    .qualities span[class*="icon"]{
+        font-size: 60px;
+    }
+    .qualities span:nth-child(2){
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    .qualities h2,
+    .about h2,
+    .plans h2,
+    .refferal h2,
+    .news h2{
+        font-size: 26px;
+    }
+    .qualities p{
+        font-size: 13px;
+    }
+    .news h2{
+        padding: 20px 0px;
+    }
+    .news{
+        padding: 0 0 30px 0;
+    }
+    .currencyLogo .cell{
+        display: none;
+    }
+    footer{
+        padding: 20px 0;
+    }
+    .rightBlock p,
+    .rightBlock a{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .footerContacts{
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 767px) {
     .container {
         width: 100%;
     }
+    .topline .table{
+        margin: 10px 0;
+    }
+    header .logo{
+        padding-right: 50px;
+    }
+    header .social {
+        padding-left: 9px;
+    }
+
+    .social span{
+        font-size: 25px;
+    }
+    .topline button{
+        width: 80px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .logreg .buttonGreen{
+        left: 25px;
+    }
+
+    header .time>span{
+        font-size: 26px;
+    }
+    header .data{
+        margin-left: 0;
+    }
+    header .menu a{
+        display: none;
+    }
+    header .menu{
+        height: 60px;
+    }
+    header .mobileMenu .menuMobile{
+        width: 45px;
+        height: 5px;
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        left: 93%;
+    }
+    .menuMobile:before{
+        content: '';
+        display: block;
+        width: 45px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: -12px;
+        left: 0;
+    }
+    .menuMobile:after{
+        content: '';
+        display: block;
+        width: 45px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 12px;
+        left: 0;
+    }
+
+    .banner h1 {
+        font-size: 44px;
+        padding-top: 50px;
+    }
+    .banner button{
+        margin-left: 66%;
+        width: 250px;
+    }
+
+    .banner p{
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+    .exchange{
+        margin-left: 66%;
+        margin-top: 50px;
+        height: 315px;
+        width: 250px;
+    }
+    .exchange .item{
+        padding-top: 25px;
+        margin-left: 58px;
+    }
+    .advantagesIcon span:first-child{
+        font-size: 50px;
+    }
+    .advantagesIcon span:last-child{
+        line-height: 20px;
+        left: 80px;
+    }
+    .adv .item{
+        padding-bottom: 70px;
+    }
+    .imageLaptop {
+        display: none;
+    }
+    .adv {
+        width: 100%;
+        padding-left: 15px;
+        padding-bottom: 50px;
+        margin-top: -300px;
+    }
+    .advantagesIcon{
+        margin-bottom: 0px;
+    }
+    .about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .aboutText .btn{
+        margin-top: 30px;
+    }
+    .sertificate {
+        width: 100%;
+
+    }
+    .location {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .location span:first-child {
+        left: 110px;
+        top: -20px;
+    }
+    .aboutText {
+        width: 100%;
+        padding: 20px;
+    }
+    .aboutText p{
+        font-size: 14px;
+    }
+    .plans h2{
+        padding-top: 30px;
+    }
+    .plans p{
+        padding-top: 25px;
+    }
+
+    .cardAll{
+        padding-top: 0;
+    }
+
+    .card1{
+        -webkit-background-size: contain;
+        background-size: 363px 495px;
+        margin-bottom: 55px;
+    }
+    .card2{
+        -webkit-background-size: contain;
+        background-size: 363px 495px;
+        margin-bottom: 55px;
+    }
+    .card1 .leftcard span:first-child{
+        font-size: 26px;
+        padding-top: 65px;
+    }
+    .card1 .leftcard span:nth-child(2) {
+        font-size: 56px;
+        padding-top: 80px;
+    }
+    .card1 .leftcard span:nth-child(3){
+        font-size: 14px;
+    }
+    .card1 .leftcard {
+        padding: 15px;
+    }
+    .card1 .leftcard button {
+        width: 175px;
+        height: 45px;
+        margin-top: 87px;
+        margin-left: 68px;
+    }
+    .card1 .rightcard {
+        padding: 43px 20px;
+    }
+    .dailyInterest{
+        padding-top: 0;
+    }
+    .card1 .rightcard span:nth-child(1){
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .card1 .rightcard span:nth-child(2){
+        font-weight: normal;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+
+    .card2 .leftCard span.titPlan{
+        font-size: 26px;
+        padding-top: 60px;
+    }
+    .card2 .leftCard span:nth-child(2) {
+        font-size: 56px;
+        padding-top: 80px;
+    }
+    .card2 .leftCard span:nth-child(3){
+        font-size: 14px;
+    }
+    .card2 .leftCard{
+        padding: 15px;
+    }
+    .card2 .rightCard {
+        padding: 43px 20px;
+    }
+    .totalProfit{
+        padding-top: 0;
+    }
+    .card2 .rightCard span:nth-child(1){
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .card2 .rightCard span:nth-child(2){
+        font-weight: normal;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .card2 .leftCard button{
+        width: 170px;
+        height: 45px;
+        margin-top: 126px;
+        margin-left: 60px;
+    }
+
+    .calculator{
+        padding: 20px 0 30px 0;
+    }
+    .calculator .item {
+        margin-right: 10px;
+    }
+    .calculator .item span:last-child {
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .calculator .item span:first-child{
+        font-size: 14px;
+    }
+    .calculator .item input {
+        width: 160px;
+    }
+    .calculator .item select {
+        width: 160px;
+    }
+    .calculator .item label{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .calculatorButton{
+        width: 180px;
+    }
+
+    .blocks .block1 {
+        padding-right: 120px;
+        padding-left: 66px;
+    }
+
+    .blocks .block2 {
+        display: inline-block;
+        padding-right: 0px;
+        padding-left: 120px;
+    }
+    .scheme .and{
+        width: 80px;
+        font-size: 80px;
+    }
+    .blocks .item1{
+        width: 170px;
+        height: 170px;
+    }
+    .blocks .item2{
+        width: 170px;
+        height: 170px;
+    }
+    .blocks .item1 .number{
+        font-size: 70px;
+    }
+    .blocks .item2 .number{
+        font-size: 70px;
+    }
+
+    .totalStatistics {
+        margin-top: 60px;
+    }
+    .refferal h2{
+        padding: 30px 0 0 0;
+    }
+    .refferal .text p{
+        margin-top: -45px;
+        margin-bottom: 30px;
+    }
+    .totalStatistics span:nth-child(2){
+        font-size: 13px;
+        padding-top: 15px;
+        line-height: 1;
+    }
+    .totalStatistics span:nth-child(3){
+        font-size: 22px;
+    }
+    .refferalStat{
+        height: 930px;
+    }
+    .lastDeposit,
+    .lastWithdrawals{
+        margin-bottom: 50px;
+    }
+    .statisticsWithdrawals{
+        display: none;
+    }
+    .card .item img{
+        display: none;
+    }
+    .card .item {
+        border-radius: 20px;
+        padding: 15px;
+        margin: 0 10px;
+        width: 30%;
+    }
+    .news h3{
+        font-size: 15px;
+    }
+    .news p{
+        font-size: 13px;
+    }
+    .qualities{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .qualities .item{
+        padding: 15px;
+    }
+    .qualities span[class*="icon"]{
+        font-size: 60px;
+    }
+    .qualities span:nth-child(2){
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    .qualities h2,
+    .about h2,
+    .plans h2,
+    .refferal h2,
+    .news h2{
+        font-size: 26px;
+    }
+    .qualities p{
+        font-size: 13px;
+    }
+    .news h2{
+        padding: 20px 0px;
+    }
+    .news{
+        padding: 0 0 30px 0;
+    }
+    .currencyLogo .cell{
+        display: none;
+    }
+    footer{
+        padding: 20px 0;
+    }
+    .rightBlock p,
+    .rightBlock a{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .footerContacts{
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 479px) {
     .container {
         width: 100%;
+    }
+    .topline .table{
+        margin: 10px 0;
+    }
+    header .logo{
+        padding-right: 154px;
+
+    }
+    header .social {
+        display: none;
+    }
+header .lang{
+    display: none;
+}
+
+    .topline button{
+        width: 80px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .logreg .buttonGreen{
+        left: 20px;
+    }
+    header .logo, header .logreg{
+        vertical-align: top;
+        width: 50%;
+    }
+    header .time{
+        display: none;
+    }
+
+    header .menu a{
+        display: none;
+    }
+    header .menu{
+        height: 60px;
+    }
+    header .mobileMenu .menuMobile{
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        left: 93%;
+    }
+    .menuMobile:before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: -12px;
+        left: 0;
+    }
+    .menuMobile:after{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 12px;
+        left: 0;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        padding-top: 30px;
+        line-height: 45px;
+    }
+    .banner button{
+        margin-left: 44%;
+        width: 250px;
+    }
+    .banner h2{
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .banner p{
+        padding-bottom: 20px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .exchange{
+        margin-left: 44%;
+        margin-top: 30px;
+        height: 315px;
+        width: 250px;
+    }
+    .exchange .item{
+        padding-top: 25px;
+        margin-left: 58px;
+    }
+    .advantagesIcon span:first-child{
+        font-size: 50px;
+    }
+    .advantagesIcon span:last-child{
+        line-height: 20px;
+        left: 80px;
+    }
+    .adv .item{
+        padding-bottom: 70px;
+    }
+    .imageLaptop {
+        display: none;
+    }
+    .adv {
+        width: 100%;
+        padding-left: 15px;
+        padding-bottom: 50px;
+        margin-top: -300px;
+    }
+    .advantagesIcon{
+        margin-bottom: 0px;
+    }
+    .about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .aboutText .btn{
+        margin-top: 30px;
+    }
+    .sertificate img{
+        display: none;
+    }
+    .location {
+        width: 400px;
+        margin-top: 20px;
+    }
+    .location span:first-child {
+        left: 32;
+        top: -20px;
+    }
+    .aboutText {
+        width: 100%;
+        padding: 20px;
+    }
+    .aboutText p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .aboutText button{
+        width: 185px;
+        height: 55px;
+        font-size: 14px;
+    }
+    .plans{
+        background-image: none;
+        background-color: #fff;
+     }
+    .plans h2{
+        padding-top: 30px;
+    }
+    .plans p{
+        padding-top: 25px;
+        font-size: 13px;
+        line-height: 22px;
+        padding-bottom: 25px;
+    }
+    
+    .card1{
+        display: none;
+    }
+    .card2{
+        display: none;
+    }
+
+    .calculator{
+        padding: 20px 0 30px 0;
+    }
+    .calculator .item {
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+    .calculator .item span:last-child {
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .calculator .item span:first-child{
+        font-size: 14px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .calculator .item input {
+        width: 160px;
+    }
+    .calculator .item select {
+        width: 160px;
+    }
+    .calculator .item label{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .calculatorButton{
+        width: 160px;
+        margin-left: 30px;
+    }
+
+    .blocks .block1 {
+        padding-right: 9px;
+        padding-left: 0px;
+    }
+    .blocks .item1:before,
+    .blocks .item1:after{
+        display: none;
+    }
+    .blocks .item2:before,
+    .blocks .item2:after{
+        display: none;
+    }
+    .refferalBlock{
+        margin-top: 20px;
+    }
+    .blocks .block2 {
+        display: inline-block;
+        padding-right: 0px;
+        padding-left: 92px;
+    }
+    .scheme .and{
+        width: 65px;
+        font-size: 80px;
+    }
+    .blocks .item1{
+        width: 170px;
+        height: 170px;
+    }
+    .blocks .item2{
+        width: 170px;
+        height: 170px;
+    }
+    .blocks .item1 .number{
+        font-size: 70px;
+    }
+    .blocks .item2 .number{
+        font-size: 70px;
+    }
+    .blocks .item1 .percent{
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        line-height: 32px;
+    }
+    .blocks .item2 .percent{
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        line-height: 32px;
+    }
+    .totalStatistics {
+        margin-top: 60px;
+    }
+    .refferal h2{
+        padding: 30px 0 0 0;
+    }
+    .refferal .text{
+        margin-top: 70px;
+    }
+    .refferal .text p{
+        margin-top: -45px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .refferal button{
+        width: 160px;
+        font-size: 14px;
+    }
+    .totalStatistics{
+        display: none;
+    }
+    .refferalStat{
+        height: 620px;
+    }
+    .qualities .item{
+        width: 50%;
+    }
+    .card .item img{
+        display: none;
+    }
+    .card .item {
+        border-radius: 20px;
+        padding: 15px 15px 20px 15px;
+        margin: 10px 10px;
+        width: 100%;
+    }
+    .news h3{
+        font-size: 13px;
+        margin-top: 0;
+    }
+    .news span{
+        padding-top: 0;
+    }
+    .news p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .news button{
+        margin-top: 10px;
+    }
+    .qualities{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .qualities .item{
+        padding: 15px;
+    }
+    .qualities span[class*="icon"]{
+        font-size: 60px;
+    }
+    .qualities span:nth-child(2){
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    .qualities h2,
+    .about h2,
+    .plans h2,
+    .refferal h2,
+    .news h2{
+        font-size: 26px;
+    }
+    .qualities p{
+        font-size: 13px;
+    }
+    .news h2{
+        padding: 20px 0px;
+    }
+    .news{
+        padding: 0 0 30px 0;
+    }
+    .currencyLogo .cell{
+        display: none;
+    }
+    footer{
+        padding: 20px 0;
+    }
+    .leftBlock{
+        width: 100%;
+    }
+    footer img{
+        display: inline-block;
+    }
+    footer .social{
+        display: inline-block;
+    }
+    footer .leftBlock .copyrightInformation{
+        display: inline-block;
+    }
+    .menuFooter{
+        width: 100%;
+    }
+    .rightBlock{
+        width: 100%;
+    }
+    .rightBlock p,
+    .rightBlock a{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .footerContacts{
+        margin-top: 10px;
     }
 }

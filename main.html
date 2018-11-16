@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bit-X</title>
+
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <header>
@@ -29,13 +33,16 @@
                     <a href="#"><span class="icon-vk"></span></a>
                     <a href="#"><span class="icon-18"></span></a>
                 </div>
-                <div class="time">
-                    <span>20:47</span>
-                    <div class="data">
-                        <span class="date">05 Jun</span>
-                        <span class="year">2018</span>
+                <div class="timeDate">
+                    <div class="time">
+                        <span class="time" id="time">20:47</span>
+                        <div class="data">
+                            <span class="date" id="date">05 Jun</span>
+                            <span class="year" id="year">2018</span>
+                        </div>
                     </div>
                 </div>
+
 
 
             </div>
@@ -54,8 +61,20 @@
                     <li><a href="#">RULES</a></li>
                     <li><a href="#">CONTACT US</a></li>
                 </ul>
+                <div class="mobileMenu">
+                    <div class="menuMobile">
+
+                    </div>
+                    <ul class="menuDropdown">
+
+                    </ul>
+
+                </div>
             </div>
         </div>
+
+
+
     </div>
 </header>
 <div class="content">
@@ -264,53 +283,51 @@
     </div>
 
 
-    <div class="refferal">
+    <div class="refferalStat" style="background-image: url(img/png/fon-refferStat.png)">
         <div class="container">
-            <h2>Referral programm</h2>
-            <div class="refferalBlock">
-                <div class="scheme">
+            <div class="refferal">
+                <h2>Referral programm</h2>
+                <div class="refferalBlock">
+                    <div class="scheme">
 
-                    <div class="blocks">
-                        <div class="block1">
-                            <div class="item1">
-                                <span class="number">6</span>
-                                <span>REGULAR
+                        <div class="blocks">
+                            <div class="block1">
+                                <div class="item1">
+                                    <span class="number">6</span>
+                                    <span>REGULAR
                                 <br>COMMISSION</span>
-                                <span class="percent">%</span>
+                                    <span class="percent">%</span>
+                                </div>
                             </div>
+
+                            <div class="block2">
+                                <div class="item2">
+                                    <span class="number">1</span>
+                                    <span>REPRESENTATIVE
+                                    <br>COMMISSION</span>
+                                    <span class="percent">%</span>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="block2">
-                            <div class="item2">
-                                <span class="number">1</span>
-                                <span>REPRESENTATIVE
-                                    <br>COMMISSION</span>
-                                <span class="percent">%</span>
-                            </div>
-                        </div>
+                        <span class="and">&</span>
 
                     </div>
-
-                    <span class="and">&</span>
-
                 </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, velit vitae varius
+                        venenatis,
+                        sapien lectus aliquam mi, ut mattis libero ipsum vitae nunc. Morbi eu turpis laoreet, venenatis
+                        lacus
+                        vel, consequat felis. Pellentesque aliquet facilisis diam et tincidunt. Fusce non felis eros.
+                        Etiam
+                        convallis ultricies malesuada.</p>
+                </div>
+                <button class="gradient">Learn More</button>
             </div>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, velit vitae varius
-                    venenatis,
-                    sapien lectus aliquam mi, ut mattis libero ipsum vitae nunc. Morbi eu turpis laoreet, venenatis
-                    lacus
-                    vel, consequat felis. Pellentesque aliquet facilisis diam et tincidunt. Fusce non felis eros.
-                    Etiam
-                    convallis ultricies malesuada.</p>
-            </div>
-            <button class="gradient">Learn More</button>
 
-
-        </div>
-
-        <div class="statistics">
-            <div class="container">
+            <div class="statistics clear">
                 <div class="totalStatistics clear">
                     <div class="item">
                         <span class="icon-statistics-1"></span>
@@ -338,185 +355,185 @@
                         <span>3650</span>
                     </div>
                 </div>
-                <div class="statisticsWithdrawals clear">
-                    <div class="statTb1">
-                        <div class="table1">
-                            <ul class="table full in">
-                                <li class="tRow">
-                                    <span class="tCell middle name">kacemtrans</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                <div class="statisticsWithdrawals">
+                    <div class="stat clear">
+                        <div class="statTb1">
+                            <div class="table1">
+                                <ul class="table full in">
+                                    <li class="tRow">
+                                        <span class="tCell middle name">kacemtrans</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">atzf2e00d</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">atzf2e00d</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">draghetto</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">draghetto</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-2.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">TheDude</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">TheDude</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-2.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">kacemtrans</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">kacemtrans</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-3.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-3.png" alt="">
                                     </span>
-                                </li>
-                            </ul>
-                            <div class="partTwo">
-                                <span>last deposit</span>
+                                    </li>
+                                </ul>
+                                <div class="partTwoB">
+                                    <span>last deposit</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="statTb1">
-                        <div class="table1">
-                            <ul class="table full in">
-                                <li class="tRow">
-                                    <span class="tCell middle name">kacemtrans</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                        <div class="statTb1">
+                            <div class="table1">
+                                <ul class="table full in">
+                                    <li class="tRow">
+                                        <span class="tCell middle name">kacemtrans</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">atzf2e00d</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">atzf2e00d</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">draghetto</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">draghetto</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-2.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">TheDude</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">TheDude</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-2.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">kacemtrans</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">kacemtrans</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-3.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-1.png" alt="">
                                     </span>
-                                </li>
-                                <li class="tRow">
-                                    <span class="tCell middle name">alexcandr</span>
-                                    <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
-                                    <span class="tCell middle sum1">15.32 USD</span>
-                                    <span class="tCell bottom right pay">
+                                    </li>
+                                    <li class="tRow">
+                                        <span class="tCell middle name">alexcandr</span>
+                                        <span class="tCell middle date">Jul-19-2018 03:45:38 PM</span>
+                                        <span class="tCell middle sum1">15.32 USD</span>
+                                        <span class="tCell bottom right pay">
                                         <img src="img/png/coin-3.png" alt="">
                                     </span>
-                                </li>
-                            </ul>
-                            <div class="partTwo">
-                                <span>last WITHDRAWALS</span>
+                                    </li>
+                                </ul>
+                                <div class="partTwoG">
+                                    <span>last WITHDRAWALS</span>
+                                </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -527,44 +544,46 @@
     <div class="qualities clear" style="background-image: url(img/jpg/backround-why-choose-us.jpg)">
         <div class="container">
             <h2>Why choose us</h2>
-            <div class="item">
-                <span class="icon-qualities-1"></span>
-                <span>Technical support 24/7</span>
-                <p>Experts are in touch round the clock and will answer any questions. You can contact at any
-                    time.</p>
-            </div>
-            <div class="item">
-                <span class="icon-qualities-2"></span>
-                <span>Profit only</span>
-                <p>We know the value of the victories and bitterness of defeats, therefore we carefully select
-                    investment
-                    platforms.</p>
-            </div>
-            <div class="item">
-                <span class="icon-qualities-3"></span>
-                <span>Close-knit team</span>
-                <p>We are the complex persons having extensive experience in the financial area. Among us there are
-                    technical specialists.</p>
-            </div>
-            <div class="item">
-                <span class="icon-qualities-4"></span>
-                <span>Guarantee of reliability</span>
-                <p>We take care about management of a portfolio of each investor. Only the best projects and high
-                    percentage.</p>
-            </div>
-            <div class="item">
-                <span class="icon-qualities-5"></span>
-                <span>Profit only</span>
-                <p>
-                    We know the value of the victories and bitterness of defeats, therefore we carefully select
-                    investment
-                    platforms.</p>
-            </div>
-            <div class="item">
-                <span class="icon-qualities-6"></span>
-                <span>Close-knit team</span>
-                <p>We are the complex persons having extensive experience in the financial area. Among us there are
-                    technical specialists.</p>
+            <div class="wrap">
+                <div class="item">
+                    <span class="icon-qualities-1"></span>
+                    <span>Technical support 24/7</span>
+                    <p>Experts are in touch round the clock and will answer any questions. You can contact at any
+                        time.</p>
+                </div>
+                <div class="item">
+                    <span class="icon-qualities-2"></span>
+                    <span>Profit only</span>
+                    <p>We know the value of the victories and bitterness of defeats, therefore we carefully select
+                        investment
+                        platforms.</p>
+                </div>
+                <div class="item">
+                    <span class="icon-qualities-3"></span>
+                    <span>Close-knit team</span>
+                    <p>We are the complex persons having extensive experience in the financial area. Among us there are
+                        technical specialists.</p>
+                </div>
+                <div class="item">
+                    <span class="icon-qualities-4"></span>
+                    <span>Guarantee of reliability</span>
+                    <p>We take care about management of a portfolio of each investor. Only the best projects and high
+                        percentage.</p>
+                </div>
+                <div class="item">
+                    <span class="icon-qualities-5"></span>
+                    <span>Profit only</span>
+                    <p>
+                        We know the value of the victories and bitterness of defeats, therefore we carefully select
+                        investment
+                        platforms.</p>
+                </div>
+                <div class="item">
+                    <span class="icon-qualities-6"></span>
+                    <span>Close-knit team</span>
+                    <p>We are the complex persons having extensive experience in the financial area. Among us there are
+                        technical specialists.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -623,9 +642,7 @@
             <div class="leftBlock">
                 <img src="img/png/logo-white.png" alt="">
                 <div class="social">
-                        <span class="icon-facebook">
-                            <a href=""></a>
-                        </span>
+                    <span class="icon-facebook"><a href=""></a></span>
                     <span class="icon-youtube"><a href=""></a></span>
                     <span class="icon-vk"><a href=""></a></span>
                     <span class="icon-18"><a href=""></a></span>
