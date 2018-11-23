@@ -62,14 +62,7 @@ button:hover {
     transition: all 0.3s;
 }
 .social span:hover{
-    background: #fff;
-    border: 1px solid #2b383c;
-    transition: all 0.5s;
-}
-
-footer .social span:hover{
-    background: #1e2c2d;
-    border: 1px solid #fff;
+    background: none;
     transition: all 0.5s;
 }
 
@@ -459,13 +452,13 @@ header .social, header .timeDate {
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #ffffff;
-
+    padding-left: 26px;
 }
 
 .location {
     position: relative;
-    padding-left: 70px;
-    width: 270px;
+    padding-left: 77px;
+    width: 300px;
     margin-top: 60px;
 }
 
@@ -473,7 +466,7 @@ header .social, header .timeDate {
     font-size: 60px;
     color: #009dfe;
     position: absolute;
-    left: 0px;
+    left: 10px;
     top: 0px;
     background: #009cff; /* Old browsers */
     background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
@@ -781,7 +774,21 @@ header .social, header .timeDate {
     width: 265px;
     box-shadow: inset 3px 3px 10px 4px rgba(0,0,0,0.07);
 }
+.selectric {
+    line-height: 24px;
+    font-size: 15px;
+    color: #000000;
+    border: 1px solid white;
+    background-color: #59c9ef;
+    border-radius: 30px;
+    padding: 5px;
+    width: 265px;
+    box-shadow: inset 3px 3px 10px 4px rgba(0,0,0,0.07);
+}
 
+.selectric .label {
+    font-size: 15px;
+}
 .calculator .item input:focus {
     border: none;
 }
@@ -806,13 +813,13 @@ header .social, header .timeDate {
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
-    color: #ffffff;
+    color: #000;
 }
 
 .calculator .profit {
     margin-left: 30px;
 }
-.calculator .item span:first-child {
+.calculator .profit span:first-child {
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
@@ -820,7 +827,6 @@ header .social, header .timeDate {
     display: block;
     padding-bottom: 20px;
 }
-
 
 .calculator .item span:last-child {
     font-size: 30px;
@@ -1422,28 +1428,22 @@ footer .social span {
     font-size: 25px;
     color: #ffffff;
     line-height: 24px;
-    display: inline-block;
-    width: 35px;
     padding: 5px;
-    text-align: center;
     background-color: rgba(235,242,246,0.21);
-    border-radius: 50%;
+
 }
 footer .social{
     position: relative;
-    z-index: 1;
     margin-top: 50px;
     margin-bottom: 25px;
 }
 footer .leftBlock a {
-    text-decoration: none;
     display: block;
     position: absolute;
     left: 0;
     top: 0;
     width: 35px;
     height: 35px;
-    z-index: 7;
 }
 
 footer {
@@ -1609,7 +1609,7 @@ footer .leftBlock .copyrightInformation {
     margin-left: 20px;
 }
 
-.license .sertificate {
+.license .sertificate2 {
     width: 480px;
     float: left;
 }
@@ -2380,8 +2380,13 @@ border-radius: 20px;
     header .time>span{
         font-size: 26px;
     }
+    header .time{
+        margin-left: 0;
+
+    }
     header .data{
         margin-left: 0;
+        padding-right: 0;
     }
     header .menu a{
         display: none;
@@ -3079,12 +3084,15 @@ header .lang{
     }
     footer .social{
         display: inline-block;
+        width: 200px;
+        margin-left: 20px;
     }
     footer .leftBlock .copyrightInformation{
         display: inline-block;
     }
     .menuFooter{
         width: 100%;
+        padding: 20px 17px;
     }
     .rightBlock{
         width: 100%;

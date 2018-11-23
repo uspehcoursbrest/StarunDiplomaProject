@@ -37,6 +37,11 @@ window.onload = function () {
             scrollTop: 0
         }, 500);
         return false;
-    })
+    });
+    $(function(){
+        $('select').selectric();
+    });
+
+
 };
 
