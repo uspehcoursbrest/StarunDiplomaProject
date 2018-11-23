@@ -40,16 +40,10 @@ ul {
     transition: all 0.3s;
 }
 .gradient:hover {
-    color: #fff;
-    background: #009cff; /* Old browsers */
-    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #3c9ef1;
+    background: #fff;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     border: 4px solid rgba(60,158,241,0.80);
     transition: all 0.3s;
  }
@@ -1574,10 +1568,11 @@ footer .leftBlock .copyrightInformation {
     color: #03a3f4;
 }
 
+
 .info1 p {
     width: 60%;
     float: left;
-    padding: 20px;
+    padding-right: 20px;
 }
 
 .info1 .license {
@@ -1614,6 +1609,10 @@ footer .leftBlock .copyrightInformation {
     float: left;
 }
 
+.sertificate2 img{
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+    margin-right: 20px;
+}
 .license .address {
     width: 480px;
     float: left;
@@ -1624,32 +1623,46 @@ footer .leftBlock .copyrightInformation {
 }
 
 .item2 .buttonGreen {
-    width: 310px;
+    width: 270px;
     float: left;
 }
 
 .imgOffice {
     width: 40%;
     float: left;
-
+    margin: 0 auto;
 }
 
+.imgOffice img{
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+    border: 7px solid #fff;
+}
+
+.info2{
+    padding: 50px 0 0 0;
+}
 .info2 div[class^="text"] {
-    padding: 30px;
+    padding: 0 0 60px 0;
     text-align: left;
     margin: 0 auto;
-
 }
 
 .info2 .text1 {
     width: 60%;
     float: left;
 }
+.info2 .text1 .imgText{
+    padding-left: 50px;
+}
+.info2 .text1 span{
+    font-weight: bold;
+}
+
 
 .qualities2 {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+
 }
 
 clear::after {
@@ -1658,12 +1671,12 @@ clear::after {
     clear: both;
 }
 
-.choosing2 .item {
+.qualities2 .item {
     width: 33%;
     float: left;
     text-align: center;
-    padding: 0 30px;
-    margin-bottom: 80px;
+    padding: 50px 40px;
+    display: block;
 }
 
 .qualities2 h2 {
@@ -1678,13 +1691,16 @@ clear::after {
 }
 
 .qualities2 span[class*="icon"] {
-    font-size: 55px;
-    display: block;
-    margin: 0px auto;
-    padding-bottom: 30px;
-    background: linear-gradient(to right, #009cff 0%, #1fe195 100%);
+    font-size: 80px;
+    color: #009cff;
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .qualities2 span:nth-child(2) {
@@ -1694,7 +1710,8 @@ clear::after {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #202b2f;
-    padding-top: 30px;
+    display: block;
+    margin-top: 40px;
 }
 
 .qualities2 p {
@@ -1702,9 +1719,13 @@ clear::after {
     line-height: 22px;
     letter-spacing: 0.025em;
     color: #202b2f;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
+
+.qualities2 .wrap{
+    padding-bottom: 100px;
+}
 .mobileMenu{
     display: block;
 }
