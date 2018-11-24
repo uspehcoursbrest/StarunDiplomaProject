@@ -160,10 +160,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: #F8F8F8;
-  border: 1px solid #C4C4C4;
   z-index: -1;
-  box-shadow: 0 0 10px -6px;
 }
 
 .selectric-items .selectric-scroll {
@@ -192,6 +189,7 @@
   border-bottom: 1px solid #EEE;
   color: #666;
   cursor: pointer;
+  background-color: #00DE9B;
 }
 
 .selectric-items li.selected {
@@ -240,4 +238,7 @@
 
 .selectric-items .selectric-group li {
   padding-left: 25px;
+}
+.selectric-items li.highlighted{
+  background: #00A3F4;
 }

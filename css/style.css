@@ -419,7 +419,10 @@ header .social, header .timeDate {
     width: 40%;
     float: left;
 }
-
+.sertificate img{
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+    margin: 20px 15px 20px 0;
+}
 .aboutText {
     width: 60%;
     float: left;
@@ -446,21 +449,21 @@ header .social, header .timeDate {
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #ffffff;
-    padding-left: 26px;
+    margin-bottom: 20px;
 }
 
 .location {
     position: relative;
     padding-left: 77px;
     width: 300px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .location span:first-child {
     font-size: 60px;
     color: #009dfe;
     position: absolute;
-    left: 10px;
+    left: -10px;
     top: 0px;
     background: #009cff; /* Old browsers */
     background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
@@ -476,6 +479,8 @@ header .social, header .timeDate {
     line-height: 22px;
     letter-spacing: 0.025em;
     color: #ffffff;
+    position: absolute;
+    top: 0px;
 }
 
 .aboutText p {
@@ -782,6 +787,10 @@ header .social, header .timeDate {
 
 .selectric .label {
     font-size: 15px;
+}
+
+.selectric-items ul, .selectric-items li{
+    border-radius: 20px;
 }
 .calculator .item input:focus {
     border: none;
@@ -1790,10 +1799,17 @@ clear::after {
     .location {
         width: 100%;
         margin-top: 20px;
+        margin-bottom: 30px;
     }
     .location span:first-child {
-        left: 206px;
-        top: -20px;
+        left: 305px;
+        top: -35px;
+    }
+
+    .location span:last-child{
+        left: 360px;
+        top: -26px;
+        width: 250px;
     }
     .aboutText {
         width: 100%;
@@ -1903,7 +1919,9 @@ clear::after {
     .calculator .item input {
         width: 235px;
     }
-    .calculator .item select {
+    .calculator .item select,
+    .selectric-wrapper,
+    .selectric {
         width: 235px;
     }
     .refferal:before{
@@ -2120,10 +2138,17 @@ border-radius: 20px;
     .location {
         width: 100%;
         margin-top: 20px;
+        margin-bottom: 30px;
     }
     .location span:first-child {
-        left: 110px;
-        top: -20px;
+        left: 205px;
+        top: -35px;
+    }
+
+    .location span:last-child{
+        left: 260px;
+        top: -26px;
+        width: 250px;
     }
     .aboutText {
         width: 100%;
@@ -2242,7 +2267,9 @@ border-radius: 20px;
     .calculator .item input {
         width: 160px;
     }
-    .calculator .item select {
+    .calculator .item select,
+    .selectric-wrapper,
+    .selectric{
         width: 160px;
     }
     .calculator .item label{
@@ -2505,10 +2532,17 @@ border-radius: 20px;
     .location {
         width: 100%;
         margin-top: 20px;
+        margin-bottom: 30px;
     }
     .location span:first-child {
-        left: 110px;
-        top: -20px;
+        left: 205px;
+        top: -35px;
+    }
+
+    .location span:last-child{
+        left: 260px;
+        top: -26px;
+        width: 250px;
     }
     .aboutText {
         width: 100%;
@@ -2627,7 +2661,9 @@ border-radius: 20px;
     .calculator .item input {
         width: 160px;
     }
-    .calculator .item select {
+    .calculator .item select,
+    .selectric-wrapper,
+    .selectric {
         width: 160px;
     }
     .calculator .item label{
@@ -2888,12 +2924,20 @@ header .lang{
         display: none;
     }
     .location {
-        width: 400px;
-        margin-top: 20px;
+        width: 100%;
+        margin-top: 45px;
+        margin-bottom: 70px;
     }
     .location span:first-child {
-        left: 32px;
-        top: -20px;
+        left: 70px;
+        top: -26px;
+    }
+
+    .location span:last-child{
+        left: 125px;
+        top: -18px;
+        width: 240px;
+        font-size: 12px;
     }
     .aboutText {
         width: 100%;
@@ -2945,10 +2989,13 @@ header .lang{
         padding-bottom: 10px;
         padding-top: 10px;
     }
+
     .calculator .item input {
         width: 160px;
     }
-    .calculator .item select {
+    .calculator .item select,
+    .selectric-wrapper,
+    .selectric{
         width: 160px;
     }
     .calculator .item label{
